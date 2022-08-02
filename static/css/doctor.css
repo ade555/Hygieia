@@ -68,6 +68,79 @@ input[type="submit"]:hover {
 .no-sm-display {
   display: none;
 }
+.dropdown {
+  outline: none;
+}
+.doctor-filter {
+  width: auto;
+}
+.doctor-filter .bar {
+  width: 80%;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.doctor-filter .bar .filter-btn {
+  border: 1px solid var(--main-green);
+  padding: 5px 10px;
+  background-color: var(--main-green);
+  color: var(--main-white);
+  border-radius: 5px;
+}
+.doctor-filter .bar2 {
+  width: 80%;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  background-color: var(--main-white);
+}
+.doctor-filter .bar2 .dropdown span {
+  margin-right: 20px;
+  text-align: center;
+  font-family: Poppins;
+}
+.doctor-filter .bar2 .dropdown a {
+  background-color: var(--main-green);
+  font-family: Poppins;
+  font-size: 17px;
+}
+.doctor-filter .bar2 .dropdown a:focus {
+  background-color: var(--main-white);
+  color: var(--main-green);
+}
+.doctor-filter .bar2 .dropdown .dropdown-menu {
+  background-color: var(--main-green);
+}
+.doctor-filter .bar2 .dropdown .dropdown-menu li a {
+  color: var(--main-white);
+}
+.doctor-cards {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.card-container {
+  box-shadow: 6px 6px 12px #c5c5c5c5, -6px -6px 12px #fff;
+  transition: all 0.5s;
+  border-radius: 20px;
+  color: var(--main-grey);
+  padding: 20px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+.card-container .buttons .btn {
+  background-color: var(--main-green);
+  color: var(--main-white);
+  margin-top: 10px;
+}
+.card-container .bio {
+  width: 90%;
+  margin: auto;
+}
 
 @media (max-width: 500px) {
   .no-display {
@@ -75,5 +148,16 @@ input[type="submit"]:hover {
   }
   .no-sm-display {
     display: block;
+  }
+  .bar {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .no-sm-display {
+    display: none !important;
+  }
+  .doctor-form form {
+    justify-content: center;
   }
 }
