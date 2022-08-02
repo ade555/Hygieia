@@ -9,7 +9,6 @@
 .doctor-form form {
   position: relative;
   gap: 10px;
-
 }
 
 .text-field {
@@ -41,6 +40,7 @@ label {
   left: 10px;
   top: 10px;
   transition: 0.2s;
+  font-family: Poppins;
 }
 
 input:focus ~ label,
@@ -55,21 +55,28 @@ textarea:valid ~ label {
   padding: 0 5px 0 5px;
 }
 input[type="submit"] {
-  width: 200px;
+  width: 100px;
+  font-family: Poppins;
+  background-color: var(--main-green);
+  color: var(--main-white);
+}
+input[type="submit"]:hover {
+  background-color: var(--main-white);
+  color: var(--main-green);
 }
 
-.no-display{
+.no-display {
   display: block;
 }
-.no-sm-display{
+.no-sm-display {
   display: none;
 }
 
-@media (max-width:500px) {
-  .no-display{
+@media (max-width: 500px) {
+  .no-display {
     display: none;
   }
-  .no-sm-display{
+  .no-sm-display {
     display: block;
   }
 }
