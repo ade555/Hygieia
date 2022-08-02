@@ -41,6 +41,7 @@ label {
   left: 10px;
   top: 10px;
   transition: 0.2s;
+  font-family: Poppins;
 }
 
 input:focus ~ label,
@@ -55,8 +56,10 @@ textarea:valid ~ label {
   padding: 0 5px 0 5px;
 }
 input[type="submit"] {
-  width: 200px;
+  width: 100px;
+  font-family: Poppins;
 }
+input
 
 .no-display{
   display: block;
