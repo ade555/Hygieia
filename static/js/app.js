@@ -13,8 +13,7 @@ app.controller('tableController', [ '$scope', '$http', function ($scope, $http) 
 }])
 
 //ROUTING
-app.config(['$routeProvider', function ($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     .when('/home',{
         templateUrl: "views/main.html#home-top",
