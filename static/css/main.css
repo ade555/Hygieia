@@ -1,0 +1,20 @@
+section{
+    height: fit-content;
+}
+.index-img2{
+    width: 45%;
+    margin: auto;
+}
+.index-txt2{
+    width: 50%;
+    margin: auto;
+}
+@media (max-width:500px) {
+    .index-txt2, .index-img2{
+        width: 100%;
+        margin: auto;
+    }
+    .home-landing-img{
+        display: none;
+    }
+}
