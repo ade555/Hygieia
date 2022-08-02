@@ -31,10 +31,55 @@
 </section>
 
 <!-- THIRD SCREEN -->
-<section class="p-5 container-fluid d-md-flex align-items-center justify-content-evenly">
+<!-- <section class="p-5 container-fluid d-md-flex align-items-center justify-content-evenly">
     <div class="index-enquiry-txt">
         <h2 class="text-center mb-3">Lorem ipsum <span class="text-green">dolor sit amet.</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum, aut fugiat doloremque commodi vero fugit adipisci. Et, voluptatem pariatur.</p>
     </div>
-    <div class="index-enquiry-form"></div>
-</section>
+</section> -->
+
+<div class="doctor-forms p-4 d-md-flex align-items-center justify-content-evenly">
+    <div class="index-enquiry-txt">
+        <h2 class="mb-3">Lorem ipsum <span class="text-green">dolor sit amet.</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum, aut fugiat doloremque commodi vero fugit adipisci. Et, voluptatem pariatur.</p>
+    </div>
+
+    <div class="doctor-form col-lg-6">
+      <h1>Write a complaint and our team will refer you to a Doctor</h1>
+      <form action="https://formspree.io/f/mzbwpgyy" method="POST" class="d-lg-flex d-md-flex d-sm-block">
+        <div class="left">
+          <div class="text-field left">
+            <input type="text" name="name" id="" required />
+            <label for="name">Name</label>
+          </div>
+
+          <div class="text-field left">
+            <input type="email" name="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="text-field left">
+            <input type="text" name="complaint" required />
+            <label for="complaint">Complaint</label>
+          </div>
+          <input type="submit" value="Submit" href="" class="no-display"/>
+        </div>
+        <div class="right">
+          <div class="text-field">
+            <input type="tel" name="number" required />
+            <label for="number">Mobile Number</label>
+          </div>
+          <div class="text-field">
+            <textarea
+              name="tellusmore"
+              id="form-text"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <label for="tellusmore">Tell us more</label>
+          </div>
+        </div>
+        <input type="submit" value="Submit" href="" class="no-sm-display"/>
+      </form>
+    </div>
+  </div>

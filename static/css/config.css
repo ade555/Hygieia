@@ -3,7 +3,9 @@
     --main-white: #f5f5f5;
     --main-grey: rgb(14, 14, 14);
 }
-
+body{
+    overflow-x: hidden;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
