@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
