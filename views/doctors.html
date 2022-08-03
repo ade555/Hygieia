@@ -76,14 +76,14 @@
           </div>
           <div class="bar2 no-sm-display d-lg-none mx-auto">
             <div class="dropdown">
-              <span class="mx-3">All</span>
+              <span class="mx-3" ng-click="all('rel-name')">All</span>
               <span class="mx-3" ng-click="general('role')">General</span>
               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
       
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" ng-click="pedri('role')" href="#">Pediatrician</a></li>
-                <li><a class="dropdown-item" ng-click="optha('role')" href="#">Opthalmologist</a></li>
-                <li><a class="dropdown-item" ng-click="thera('role')" href="#">Theraphist</a></li>
+                <li><button class="dropdown-item" ng-click="pedri('role')" href="#">Pediatrician</button></li>
+                <li><button class="dropdown-item" ng-click="optha('role')" href="#">Opthalmologist</button></li>
+                <li><button class="dropdown-item" ng-click="thera('role')" href="#">Theraphist</button></li>
               </ul>
             </div>
           </div>
