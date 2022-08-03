@@ -4,12 +4,19 @@ var app = angular.module('myApp', ['ngRoute']);
 app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
     $http.get('static/data/hygieia.json')
     .then(function(response){
-        console.log(response.data.doctors);
+        // console.log(response.data.doctors);
         $scope.info = response.data.doctors;
+        var docs =$scope.info;
+        function generalDocs(docs) {
+            
+        }
+        generalDocs(docs);
     })
     .catch(function(err){
         console.log(err)
     })
+
+    // FILTER FUNCTIONS
 }])
 
 //ROUTING
