@@ -21,3 +21,8 @@ section{
 .home-landing-img, .home-landing-txt{
     width: 100%;
 }
+@media (max-width:992px) {
+    .flex-div{
+        display: block !important;
+    }
+}

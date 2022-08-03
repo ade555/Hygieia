@@ -30,6 +30,15 @@ app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
   },
 ]);
 
+// header controller
+app.controller('navCtrl', function($scope){
+    $scope.openSlide = function(){
+        document.getElementById('side-menu').style.width = '250px';
+    }
+    $scope.closeSlide = function(){
+       document.getElementById('side-menu').style.width = '0px';
+   }
+})
 //ROUTING
 app.config([
   "$routeProvider",
@@ -44,7 +53,5 @@ app.config([
       .otherwise({
         redirectTo: "/home",
       });
-    // $routeProvider.html5Mode(true);
-    // $routeProvider.hashPrefix('');
   },
 ]);
