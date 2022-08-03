@@ -1,11 +1,11 @@
 var app = angular.module('myApp', ['ngRoute']);
 
 //CONTROLLER FOR TABLE
-app.controller('tableController', [ '$scope', '$http', function ($scope, $http) {
-    $http.get('assets/data/hygieia.json')
+app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
+    $http.get('static/data/hygieia.json')
     .then(function(response){
-        console.log(response.data.table);
-        $scope.info = response.data.table;
+        console.log(response.data.doctors);
+        $scope.info = response.data.doctors;
     })
     .catch(function(err){
         console.log(err)

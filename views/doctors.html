@@ -54,7 +54,7 @@
       </div>
 </section>
 
-<section class="p-5 container-fluid">
+<section class="p-5 container-fluid" ng-controller="DocCtrl">
     <div class="doctor-profile">
         <div class="doctor-filter">
           <div class="bar mx-auto text-center no-display bg-green mb-5">
@@ -88,94 +88,15 @@
             </div>
           </div>
         </div>
-        <div class="doctor-cards d-md-flex align-items-center justify-content-evenly">
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
+        <div class="doctor-cards d-md-flex align-items-center justify-content-evenly" >
+          <div class="card-container mb-5" ng-repeat="x in info">
+            <img src="{{x.picture}}" alt="user" class="rounded-circle"/>
+            <h4>{{x.name}}</h4>
+            <h6>email: {{x.email}}</h6>
             <p>General Doctor</p>
             <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
             <div class="buttons">
-              <button class="btn">Message</button>
-            </div>
-          </div>
-      
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
-            <p>General Doctor</p>
-            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
-            <div class="buttons">
-              <button class="btn">Message</button>
-            </div>
-          </div>
-      
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
-            <p>General Doctor</p>
-            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
-            <div class="buttons">
-              <button class="btn">Message</button>
-            </div>
-          </div>
-      
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
-            <p>General Doctor</p>
-            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
-            <div class="buttons">
-              <button class="btn">Message</button>
-            </div>
-          </div>
-      
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
-            <p>General Doctor</p>
-            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
-            <div class="buttons">
-              <button class="btn">Message</button>
-            </div>
-          </div>
-      
-          <div class="card-container mb-5">
-            <img
-              src="https://randomuser.me/api/portraits/men/4.jpg"
-              alt="user"
-              class="rounded-circle"
-            />
-            <h4>Hephzisoft Ite</h4>
-            <h6>Spain</h6>
-            <p>General Doctor</p>
-            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias animi a debitis odio vero earum dolorem delectus sed quibusdam.</p>
-            <div class="buttons">
-              <button class="btn">Message</button>
+              <a class="btn" href="mailto:{{x.email}}">Message</a>
             </div>
           </div>
         </div>
