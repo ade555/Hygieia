@@ -3,84 +3,84 @@
         {
           "id": 1,
           "name": "Leanne Graham",
-          "username": "Bret",
+          "role": "General Doctor",
           "email": "Sincere@april.biz",
           "picture": "https://randomuser.me/api/portraits/women/4.jpg"
         },
         {
           "id": 2,
           "name": "Ervin Howell",
-          "username": "Antonette",
+          "role": "Opthalmologist",
           "email": "Shanna@melissa.tv",
           "picture": "https://randomuser.me/api/portraits/men/5.jpg"
         },
         {
             "id": 3,
             "name": "Clementine Bauch",
-            "username": "Samantha",
+            "role": "Pediatrician",
             "email": "Nathan@yesenia.net",
             "picture": "https://randomuser.me/api/portraits/women/3.jpg"
           },
           {
             "id": 4,
             "name": "Patricia Lebsack",
-            "username": "Karianne",
+            "role": "Theraphist",
             "email": "Julianne.OConner@kory.org",
             "picture": "https://randomuser.me/api/portraits/women/14.jpg"
           },
           {
             "id": 5,
             "name": "Chelsey Dietrich",
-            "username": "Kamren",
+            "role": "General Doctor",
             "email": "Lucio_Hettinger@annie.ca",
             "picture": "https://randomuser.me/api/portraits/women/23.jpg"
           },
           {
             "id": 6,
             "name": "Dennis Schulist",
-            "username": "Leopoldo_Corkery",
+            "role": "Pediatrician",
             "email": "Karley_Dach@jasper.info",
             "picture": "https://randomuser.me/api/portraits/men/7.jpg"
           },
           {
             "id": 7,
             "name": "Kurtis Weissnat",
-            "username": "Elwyn.Skiles",
+            "role": "Theraphist",
             "email": "Telly.Hoeger@billy.biz",
             "picture": "https://randomuser.me/api/portraits/men/11.jpg"
           },
           {
             "id": 8,
             "name": "Nicholas Runolfsdottir V",
-            "username": "Maxime_Nienow",
+            "role": "General Doctor",
             "email": "Sherwood@rosamond.me",
             "picture": "https://randomuser.me/api/portraits/men/13.jpg"
           },
           {
             "id": 9,
             "name": "Glenna Reichert",
-            "username": "Delphine",
+            "role": "Opthalmologist",
             "email": "Chaim_McDermott@dana.io",
             "picture": "https://randomuser.me/api/portraits/women/26.jpg"
           },
           {
             "id": 10,
             "name": "Clementina DuBuque",
-            "username": "Moriah.Stanton",
+            "role": "Pediatrician",
             "email": "Rey.Padberg@karina.biz",
             "picture": "https://randomuser.me/api/portraits/women/30.jpg"
           },
           {
             "id": 11,
             "name": "Paul S. Lipscomb",
-            "username": "paulie",
+            "role": "General Doctor",
             "email": "PaulSLipscomb@dayrep.com",
             "picture": "https://randomuser.me/api/portraits/men/14.jpg"
           },
           {
             "id": 12,
             "name": "Christopher L. Duffy",
-            "username": "Macon",
+            "role": "General Doctor",
             "email": "ChristopherLDuffy@armyspy.com",
             "picture": "https://randomuser.me/api/portraits/men/20.jpg"
           }
