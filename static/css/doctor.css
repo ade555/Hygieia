@@ -75,10 +75,8 @@ input[type="submit"]:hover {
   width: auto;
 }
 .doctor-filter .bar {
-  width: 80%;
+  width: 100%;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 100px;
   display: flex;
 }
 .doctor-filter .bar .filter-btn {
@@ -86,36 +84,31 @@ input[type="submit"]:hover {
   padding: 5px 10px;
   background-color: var(--main-green);
   color: var(--main-white);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .doctor-filter .bar2 {
-  width: 80%;
+  width: 100%;
   justify-content: center;
-  gap: 30px;
-  margin-left: 30px;
   margin-bottom: 100px;
   display: flex;
   background-color: var(--main-white);
 }
 .doctor-filter .bar2 .dropdown span {
-  margin-right: 20px;
   text-align: center;
   font-family: Poppins;
 }
 .doctor-filter .bar2 .dropdown a {
-  background-color: var(--main-green);
+  background-color: var(--main-white);
   font-family: Poppins;
   font-size: 17px;
-}
-.doctor-filter .bar2 .dropdown a:focus {
-  background-color: var(--main-white);
-  color: var(--main-green);
+  color: #000;
+  border: none;
 }
 .doctor-filter .bar2 .dropdown .dropdown-menu {
-  background-color: var(--main-green);
+  background-color: var(--main-white);
 }
 .doctor-filter .bar2 .dropdown .dropdown-menu li a {
-  color: var(--main-white);
+  color: var(--main-grey);
 }
 .doctor-cards {
   margin-bottom: 20px;
