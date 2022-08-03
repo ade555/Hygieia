@@ -12,6 +12,9 @@ app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
     })
 
     // FILTER FUNCTIONS
+    $scope.all = function(x){
+        $scope.filter = x = "All Doctor";
+    }
     $scope.general = function (x) {
       $scope.filter = x = "General Doctor";
     };
