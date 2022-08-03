@@ -65,25 +65,25 @@
               <button class="filter-btn" ng-click="general('role')">General</button>
             </div>
             <div class="items">
-              <button class="filter-btn" ng-click="pedri('role')">Doctor1</button>
+              <button class="filter-btn" ng-click="pedri('role')">Pediatrician</button>
             </div>
             <div class="items">
-              <button class="filter-btn" ng-click="optha('role')">Doctor2</button>
+              <button class="filter-btn" ng-click="optha('role')">Opthalmologist</button>
             </div>
             <div class="items">
-              <button class="filter-btn" ng-click="thera('role')">Doctor3</button>
+              <button class="filter-btn" ng-click="thera('role')">Theraphist</button>
             </div>
           </div>
           <div class="bar2 no-sm-display d-lg-none mx-auto">
             <div class="dropdown">
               <span class="mx-3">All</span>
-              <span class="mx-3">General</span>
+              <span class="mx-3" ng-click="general('role')">General</span>
               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
       
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Doctor1</a></li>
-                <li><a class="dropdown-item" href="#">Doctor2</a></li>
-                <li><a class="dropdown-item" href="#">Doctor3</a></li>
+                <li><a class="dropdown-item" ng-click="pedri('role')" href="#">Pediatrician</a></li>
+                <li><a class="dropdown-item" ng-click="optha('role')" href="#">Opthalmologist</a></li>
+                <li><a class="dropdown-item" ng-click="thera('role')" href="#">Theraphist</a></li>
               </ul>
             </div>
           </div>
