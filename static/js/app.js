@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module("myApp", ["ngRoute"]);
 
 //CONTROLLER FOR TABLE
 app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
@@ -12,20 +12,36 @@ app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
     })
 
     // FILTER FUNCTIONS
-}])
+    $scope.general = function (x) {
+      $scope.filter = x = "General Doctor";
+    };
+    $scope.optha = function (x) {
+        $scope.filter = x = "Opthalmologist";
+      };
+      $scope.pedri = function (x) {
+        $scope.filter = x = "Pediatrician";
+      };
+      $scope.thera = function (x) {
+        $scope.filter = x = "Theraphist";
+      };
+  },
+]);
 
 //ROUTING
-app.config(['$routeProvider', function ($routeProvider) {
+app.config([
+  "$routeProvider",
+  function ($routeProvider) {
     $routeProvider
-    .when('/home',{
+      .when("/home", {
         templateUrl: "views/main.html#home-top",
-    })
-    .when('/doctors',{
+      })
+      .when("/doctors", {
         templateUrl: "views/doctors.html#doctors-top",
-    })
-    .otherwise({
-        redirectTo: '/home'
-    })
+      })
+      .otherwise({
+        redirectTo: "/home",
+      });
     // $routeProvider.html5Mode(true);
     // $routeProvider.hashPrefix('');
-}])
+  },
+]);
