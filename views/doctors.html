@@ -59,19 +59,19 @@
         <div class="doctor-filter">
           <div class="bar mx-auto text-center no-display bg-green mb-5">
             <div class="items">
-              <button class="filter-btn">All</button>
+              <button class="filter-btn" ng-click="filters('role')">All</button>
             </div>
             <div class="items">
-              <button class="filter-btn">General</button>
+              <button class="filter-btn" ng-click="general('role')">General</button>
             </div>
             <div class="items">
-              <button class="filter-btn">Doctor1</button>
+              <button class="filter-btn" ng-click="pedri('role')">Doctor1</button>
             </div>
             <div class="items">
-              <button class="filter-btn">Doctor2</button>
+              <button class="filter-btn" ng-click="optha('role')">Doctor2</button>
             </div>
             <div class="items">
-              <button class="filter-btn">Doctor3</button>
+              <button class="filter-btn" ng-click="thera('role')">Doctor3</button>
             </div>
           </div>
           <div class="bar2 no-sm-display d-lg-none mx-auto">
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="doctor-cards d-md-flex align-items-center justify-content-evenly" >
-          <div class="card-container mb-5" ng-repeat="x in info">
+          <div class="card-container mb-5" ng-repeat="x in info | filter: filter ">
             <img src="{{x.picture}}" alt="{{x.name}}" class="rounded-circle"/>
             <h4>{{x.name}}</h4>
             <h6>email: {{x.email}}</h6>
