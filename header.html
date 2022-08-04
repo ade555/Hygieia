@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+<!-- <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand ms-5 text-green" href="#">Hygieia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,8 +13,39 @@
             <a class="nav-link" href="#!/doctors#doctors-top">Meet Doctors</a>
           </li>
           <li class="nav-item mx-5">
-            <a class="nav-link text-green" href="#">Link</a>
+            <a class="nav-link text-green" href="#">Feedback</a>
           </li>
       </div>
     </div>
-</nav>
+</nav> -->
+
+<!-- ****** NAVIGATION ****** -->
+<div id="navigation" class="fixed-top" ng-controller="navCtrl">
+
+  <!-- MAIN NAVIGATION BAR -->
+    <nav  id="main-nav" class="navbar">
+      <a href="#!/home" class="ms-5 text-green brand">Hygieia</a>
+      <span class="open-slide">
+          <span href="#" ng-click="openSlide()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#0dcaf0" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#0dcaf0" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#0dcaf0" stroke-width="5"/>
+            </svg>
+          </span>
+        </span>
+        <ul class="header-nav">
+          <li class="nav-item text-green"><a href="#!/home#home-top">Home</a></li>
+          <li class="nav-item text-green">\</li>
+          <li class="nav-item text-green"><a href="#!/doctors#doctors-top">Meet Doctors</a></li>
+        </ul>
+  </nav>
+    <!-- ****** SIDEBAR ****** -->
+  <div id="side-menu" class="side-nav">
+      <span class="btn-close ms-auto" ng-click="closeSlide()">&times;</span>
+      <div class="mt-4">
+        <li class="nav-item"><a href="#!/home#home-top" ng-click="closeSlide()" class="text-green">Home</a></li>
+        <li class="nav-item"><a href="#!/doctors#doctors-top" ng-click="closeSlide()" class="text-green">Meet Doctors</a></li>
+      </div>
+  </div>
+</div>

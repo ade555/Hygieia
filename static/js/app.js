@@ -1,24 +1,20 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
 //CONTROLLER FOR TABLE
-app.controller("DocCtrl", [
-  "$scope",
-  "$http",
-  function ($scope, $http) {
-    $http
-      .get("static/data/hygieia.json")
-      .then(function (response) {
-        // console.log(response.data.doctors);
+app.controller('DocCtrl', [ '$scope', '$http', function ($scope, $http) {
+    $http.get('static/data/hygieia.json')
+    .then(function(response){
+        console.log(response.data.doctors);
         $scope.info = response.data.doctors;
-        var docs = $scope.info;
-        function generalDocs(docs) {}
-        generalDocs(docs);
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+    })
+    .catch(function(err){
+        console.log(err)
+    })
 
     // FILTER FUNCTIONS
+    $scope.all = function(x){
+        $scope.filter = x = "All Doctor";
+    }
     $scope.general = function (x) {
       $scope.filter = x = "General Doctor";
     };
@@ -34,6 +30,15 @@ app.controller("DocCtrl", [
   },
 ]);
 
+// header controller
+app.controller('navCtrl', function($scope){
+    $scope.openSlide = function(){
+        document.getElementById('side-menu').style.width = '250px';
+    }
+    $scope.closeSlide = function(){
+       document.getElementById('side-menu').style.width = '0px';
+   }
+})
 //ROUTING
 app.config([
   "$routeProvider",
@@ -48,7 +53,5 @@ app.config([
       .otherwise({
         redirectTo: "/home",
       });
-    // $routeProvider.html5Mode(true);
-    // $routeProvider.hashPrefix('');
   },
 ]);

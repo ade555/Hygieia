@@ -2,87 +2,99 @@
     "doctors":[
         {
           "id": 1,
-          "name": "Leanne Graham",
-          "role": "General Doctor",
-          "email": "Sincere@april.biz",
-          "picture": "https://randomuser.me/api/portraits/women/4.jpg"
-        },
-        {
-          "id": 2,
           "name": "Ervin Howell",
           "role": "Opthalmologist",
           "email": "Shanna@melissa.tv",
-          "picture": "https://randomuser.me/api/portraits/men/5.jpg"
+          "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+          "rel-name": "All Doctor"
+        },
+        {
+          "id": 2,
+          "name": "Leanne Graham",
+          "role": "General Doctor",
+          "email": "Sincere@april.biz",
+          "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+          "rel-name": "All Doctor"
         },
         {
             "id": 3,
             "name": "Clementine Bauch",
             "role": "Pediatrician",
             "email": "Nathan@yesenia.net",
-            "picture": "https://randomuser.me/api/portraits/women/3.jpg"
+            "picture": "https://randomuser.me/api/portraits/women/3.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 4,
             "name": "Patricia Lebsack",
             "role": "Theraphist",
             "email": "Julianne.OConner@kory.org",
-            "picture": "https://randomuser.me/api/portraits/women/14.jpg"
+            "picture": "https://randomuser.me/api/portraits/women/14.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 5,
             "name": "Chelsey Dietrich",
             "role": "General Doctor",
             "email": "Lucio_Hettinger@annie.ca",
-            "picture": "https://randomuser.me/api/portraits/women/23.jpg"
+            "picture": "https://randomuser.me/api/portraits/women/23.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 6,
             "name": "Dennis Schulist",
             "role": "Pediatrician",
             "email": "Karley_Dach@jasper.info",
-            "picture": "https://randomuser.me/api/portraits/men/7.jpg"
+            "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 7,
             "name": "Kurtis Weissnat",
             "role": "Theraphist",
             "email": "Telly.Hoeger@billy.biz",
-            "picture": "https://randomuser.me/api/portraits/men/11.jpg"
+            "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 8,
             "name": "Nicholas Runolfsdottir V",
             "role": "General Doctor",
             "email": "Sherwood@rosamond.me",
-            "picture": "https://randomuser.me/api/portraits/men/13.jpg"
+            "picture": "https://randomuser.me/api/portraits/men/13.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 9,
             "name": "Glenna Reichert",
             "role": "Opthalmologist",
             "email": "Chaim_McDermott@dana.io",
-            "picture": "https://randomuser.me/api/portraits/women/26.jpg"
+            "picture": "https://randomuser.me/api/portraits/women/26.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 10,
             "name": "Clementina DuBuque",
             "role": "Pediatrician",
             "email": "Rey.Padberg@karina.biz",
-            "picture": "https://randomuser.me/api/portraits/women/30.jpg"
+            "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 11,
             "name": "Paul S. Lipscomb",
             "role": "General Doctor",
             "email": "PaulSLipscomb@dayrep.com",
-            "picture": "https://randomuser.me/api/portraits/men/14.jpg"
+            "picture": "https://randomuser.me/api/portraits/men/14.jpg",
+          "rel-name": "All Doctor"
           },
           {
             "id": 12,
             "name": "Christopher L. Duffy",
-            "role": "General Doctor",
+            "role": "Pediatrician",
             "email": "ChristopherLDuffy@armyspy.com",
-            "picture": "https://randomuser.me/api/portraits/men/20.jpg"
+            "picture": "https://randomuser.me/api/portraits/men/20.jpg",
+          "rel-name": "All Doctor"
           }
     ]    
 }

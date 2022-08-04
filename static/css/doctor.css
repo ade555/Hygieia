@@ -1,5 +1,5 @@
 :root {
-  --main-green: #32cd32;
+  --main-green: #0DCAF0;
   --main-white: #f5f5f5;
   --main-grey: #0e0e0e;
 }
@@ -82,9 +82,14 @@ input[type="submit"]:hover {
 .doctor-filter .bar .filter-btn {
   border: 1px solid var(--main-green);
   padding: 5px 10px;
-  background-color: var(--main-green);
+  /* background-color: var(--main-green); */
+  color: var(--main-green);
+  border-radius: 20px;
+  transition: .5s;
+}
+.doctor-filter .bar .filter-btn:hover{
   color: var(--main-white);
-  border-radius: 10px;
+  background-color: var(--main-green);
 }
 .doctor-filter .bar2 {
   width: 100%;
@@ -130,11 +135,6 @@ input[type="submit"]:hover {
   color: var(--main-white);
   margin-top: 10px;
 }
-.card-container .bio {
-  width: 90%;
-  margin: auto;
-}
-
 @media (max-width: 500px) {
   .no-display {
     display: none;
@@ -149,8 +149,5 @@ input[type="submit"]:hover {
 @media (max-width: 992px) and (min-width: 768px) {
   .no-sm-display {
     display: none !important;
-  }
-  .doctor-form form {
-    justify-content: center;
   }
 }
