@@ -4,13 +4,13 @@
         <div class="doctor-form-img col-lg-6">
           <img
             src="https://res.cloudinary.com/hephzisoft/image/upload/v1659520248/projectHygieia/Customer_Survey-rafiki_1_yj3jjj.svg"
-            alt=""
+            alt="complaint"
             class="img-fluid"
           />
         </div>
       
         <div class="doctor-form col-lg-6">
-          <h1>Write a complaint and our team will refer you to a Doctor</h1>
+          <h4>Tell us exactly what is wrong. Our best physcians will give you a <span class="text-green">prompt response</span>.</h4>
           <form
             action="https://formspree.io/f/mzbwpgyy"
             method="POST"
@@ -55,35 +55,36 @@
 </section>
 
 <section class="p-5 container-fluid" ng-controller="DocCtrl">
+  <h3 class="mb-5 text-lg-center">Meet our most <span class="text-green">elite doctors</span></h3>
     <div class="doctor-profile">
         <div class="doctor-filter">
-          <div class="bar mx-auto text-center no-display bg-green mb-5">
-            <div class="items">
-              <button class="filter-btn" ng-click="all('rel-name')">All</button>
+          <div class="bar mx-auto text-center no-display mb-5">
+            <div class="items px-3">
+              <button class="filter-btn" ng-click="all('rel-name')">All Doctors</button>
             </div>
-            <div class="items">
-              <button class="filter-btn" ng-click="general('role')">General</button>
+            <div class="items px-3">
+              <button class="filter-btn" ng-click="general('role')">General Doctors</button>
             </div>
-            <div class="items">
-              <button class="filter-btn" ng-click="pedri('role')">Pediatrician</button>
+            <div class="items px-3">
+              <button class="filter-btn" ng-click="pedri('role')">Pediatricians</button>
             </div>
-            <div class="items">
-              <button class="filter-btn" ng-click="optha('role')">Opthalmologist</button>
+            <div class="items px-3">
+              <button class="filter-btn" ng-click="optha('role')">Opthalmologists</button>
             </div>
-            <div class="items">
-              <button class="filter-btn" ng-click="thera('role')">Theraphist</button>
+            <div class="items px-3">
+              <button class="filter-btn" ng-click="thera('role')">Theraphists</button>
             </div>
           </div>
           <div class="bar2 no-sm-display d-lg-none mx-auto">
             <div class="dropdown">
-              <span class="mx-3" ng-click="all('rel-name')">All</span>
-              <span class="mx-3" ng-click="general('role')">General</span>
+              <span class="mx-3" ng-click="all('rel-name')">All Doctors</span>
               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
       
               <ul class="dropdown-menu">
-                <li><button class="dropdown-item" ng-click="pedri('role')">Pediatrician</button></li>
-                <li><button class="dropdown-item" ng-click="optha('role')">Opthalmologist</button></li>
-                <li><button class="dropdown-item" ng-click="thera('role')">Theraphist</button></li>
+                <li><button class="dropdown-item" ng-click="general('role')">General Doctors</button></li>
+                <li><button class="dropdown-item" ng-click="pedri('role')">Pediatricians</button></li>
+                <li><button class="dropdown-item" ng-click="optha('role')">Opthalmologists</button></li>
+                <li><button class="dropdown-item" ng-click="thera('role')">Theraphists</button></li>
               </ul>
             </div>
           </div>

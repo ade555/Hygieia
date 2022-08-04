@@ -2,18 +2,18 @@
     "doctors":[
         {
           "id": 1,
-          "name": "Leanne Graham",
-          "role": "General Doctor",
-          "email": "Sincere@april.biz",
-          "picture": "https://randomuser.me/api/portraits/women/4.jpg",
-          "rel-name": "All Doctor"
-        },
-        {
-          "id": 2,
           "name": "Ervin Howell",
           "role": "Opthalmologist",
           "email": "Shanna@melissa.tv",
           "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+          "rel-name": "All Doctor"
+        },
+        {
+          "id": 2,
+          "name": "Leanne Graham",
+          "role": "General Doctor",
+          "email": "Sincere@april.biz",
+          "picture": "https://randomuser.me/api/portraits/women/4.jpg",
           "rel-name": "All Doctor"
         },
         {

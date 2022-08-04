@@ -82,9 +82,14 @@ input[type="submit"]:hover {
 .doctor-filter .bar .filter-btn {
   border: 1px solid var(--main-green);
   padding: 5px 10px;
-  background-color: var(--main-green);
+  /* background-color: var(--main-green); */
+  color: var(--main-green);
+  border-radius: 20px;
+  transition: .5s;
+}
+.doctor-filter .bar .filter-btn:hover{
   color: var(--main-white);
-  border-radius: 10px;
+  background-color: var(--main-green);
 }
 .doctor-filter .bar2 {
   width: 100%;
