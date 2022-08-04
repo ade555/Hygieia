@@ -1,3 +1,8 @@
 footer{
     background-color: var(--main-white);
+    font-family: Poppins;
+}
+footer h2{
+    font-weight: bolder;
+    color: var(--main-green);
 }
