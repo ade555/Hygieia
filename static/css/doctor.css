@@ -101,6 +101,7 @@ input[type="submit"]:hover {
 .doctor-filter .bar2 .dropdown span {
   text-align: center;
   font-family: Poppins;
+  word-spacing: 10px
 }
 .doctor-filter .bar2 .dropdown a {
   background-color: var(--main-white);
